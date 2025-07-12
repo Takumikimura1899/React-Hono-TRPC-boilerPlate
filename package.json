@@ -1,16 +1,18 @@
 {
-  "name": "react-hono-trpc",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.12.4",
-  "devDependencies": {
-    "@biomejs/biome": "^2.0.6"
-  }
+	"name": "react-hono-trpc",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"format": "biome format --write",
+		"lint": "biome check --fix"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.12.4",
+	"devDependencies": {
+		"@biomejs/biome": "^2.0.6"
+	}
 }
