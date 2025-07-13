@@ -1,4 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Button } from "@/components/ui/button";
+import {
+	Card,
+	CardAction,
+	CardContent,
+	CardDescription,
+	CardFooter,
+	CardHeader,
+	CardTitle,
+} from "@/components/ui/card";
 import { trpc } from "@/lib/trpc";
 
 export const Route = createFileRoute("/")({
@@ -27,6 +37,20 @@ function Index() {
 					</li>
 				))}
 			</ul>
+			<Card>
+				<CardHeader>
+					<CardTitle>Card Title</CardTitle>
+					<CardDescription>Card Description</CardDescription>
+					<CardAction>Card Action</CardAction>
+				</CardHeader>
+				<CardContent>
+					<p>Card Content</p>
+					<Button>shadcn/ui Button</Button>
+				</CardContent>
+				<CardFooter>
+					<p>Card Footer</p>
+				</CardFooter>
+			</Card>
 		</div>
 	);
 }
