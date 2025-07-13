@@ -1,6 +1,11 @@
-import { trpc } from "./lib/trpc";
+import { createFileRoute } from "@tanstack/react-router";
+import { trpc } from "@/lib/trpc";
 
-function App() {
+export const Route = createFileRoute("/")({
+	component: Index,
+});
+
+function Index() {
 	const { data, isLoading, error } = trpc.getPosts.useQuery();
 
 	if (isLoading) {
@@ -25,5 +30,3 @@ function App() {
 		</div>
 	);
 }
-
-export default App;

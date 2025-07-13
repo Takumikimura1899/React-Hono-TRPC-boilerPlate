@@ -20,6 +20,7 @@ Vite, Hono, tRPC, Prisma を使用した、モダンで完全な型安全性を�
 | ------------------ | --------------------------------------- |
 | モノレポ           | pnpm workspace                          |
 | フロントエンド     | React, Vite, TypeScript, TanStack Query |
+| ルーティング       | Tanstack Router                         |
 | バックエンド       | Hono (on Node.js)                       |
 | API                | tRPC                                    |
 | DB / ORM           | Prisma, SQLite                          |
